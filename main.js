@@ -1,11 +1,10 @@
-alert('teste');
+class Matematica{
 
-class teste {
-    metodo(){
-
+    static soma(a, b){
+        return a + b;
     }
 
-    outro(){
-        
-    }
+    
 }
+
+console.log(Matematica.soma(2, 2));

@@ -6,22 +6,21 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-alert('teste');
-
-var teste =
+var Matematica =
 /*#__PURE__*/
 function () {
-  function teste() {
-    _classCallCheck(this, teste);
+  function Matematica() {
+    _classCallCheck(this, Matematica);
   }
 
-  _createClass(teste, [{
-    key: "metodo",
-    value: function metodo() {}
-  }, {
-    key: "outro",
-    value: function outro() {}
+  _createClass(Matematica, null, [{
+    key: "soma",
+    value: function soma(a, b) {
+      return a + b;
+    }
   }]);
 
-  return teste;
+  return Matematica;
 }();
+
+console.log(Matematica.soma(2, 2));
