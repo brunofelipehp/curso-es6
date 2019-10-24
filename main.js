@@ -1,11 +1,11 @@
 const  arr = [1, 3, 4, 5, 8, 9];
 
 //percorre todos os items do vetor
-const newArr =  arr.map(function(item, index){
-    return item + index;
-});
+const newArr =  arr.map(item => item * 2);
 
 console.log(newArr);
+
+/*
 // retorna o valor total da soma de todos os items do vetor 
 const sum = arr.reduce(function(total, next){
     return total + next;
@@ -26,3 +26,5 @@ const find = arr.find(function(item){
 });
 
 console.log(find);
+
+*/
