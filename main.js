@@ -1,14 +1,49 @@
+//SPREAD
+
+const usuario1 = {
+    nome: 'Bruno',
+    idade: 23,
+    empresa: 'Danbru',
+};
+
+const usuario2 = { ...usuario1, nome: 'Felipe'};
+console.log(usuario2);
+/*
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+
+const arr3 = [...arr1, ...arr2];
+
+console.log(arr3);
+*/
+
+//REST
+/*
+function soma(a, b, ...params) {
+    return params;
+}
+console.log(soma(1,3,4,4,5,6,7));
+*/
+
+/*
+const arr = [1, 2, 3, 4];
+
+const [a, b, ...c ] = arr;
+
+console.log(a);
+console.log(b);
+console.log(c);
+*/
+
+/*
 const usuario = {
     nome: 'Bruno',
     idade: 26,
-    endereco:{
-        cidade: 'São Paulo',
-        estado: 'SP'
-    },
+   empresa: 'Danbru'
 };
-function mostraNome({nome, idade}){
 
-    console.log(nome, idade);
-}
+const {nome, ...resto} = usuario;
 
-mostraNome(usuario);
+console.log(nome);
+console.log(resto);
+*/
