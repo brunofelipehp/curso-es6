@@ -1,31 +1,18 @@
 "use strict";
 
-var arr = [1, 3, 4, 5, 8, 9]; //percorre todos os items do vetor
+var usuario = {
+  nome: 'Bruno',
+  idade: 26,
+  endereco: {
+    cidade: 'São Paulo',
+    estado: 'SP'
+  }
+};
 
-var newArr = arr.map(function (item) {
-  return item * 2;
-});
-console.log(newArr);
-/*
-// retorna o valor total da soma de todos os items do vetor 
-const sum = arr.reduce(function(total, next){
-    return total + next;
-});
+function mostraNome(_ref) {
+  var nome = _ref.nome,
+      idade = _ref.idade;
+  console.log(nome, idade);
+}
 
-console.log(sum);
-//retorna true ou false da condição passada
-const filter = arr.filter(function(item){
-    return item % 2 === 0;
-});
-
-console.log(filter);
-
-
-// retorna o valor encotrando 
-const find = arr.find(function(item){
-    return item === 4;
-});
-
-console.log(find);
-
-*/
+mostraNome(usuario);
